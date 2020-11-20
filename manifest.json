@@ -16,5 +16,5 @@
             "run_at": "document_end"
         }
     ],
-    "web_accessible_resources": ["js/*.js", "components/*"]
+    "web_accessible_resources": ["js/*.js", "components/*", "css/*"]
 }

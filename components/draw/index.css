@@ -1,6 +1,6 @@
 .st-draw {
     position: fixed;
-    z-index: 1000;
+    z-index: 9999999;
     top: 0;
     right: 0;
     width: 400px;
@@ -33,6 +33,7 @@
 .st-draw__video-list {
     width: 100%;
     height: 80%;
+    background-color: #fff;
     overflow: auto;
     list-style: none;
     padding: 0;
@@ -41,26 +42,56 @@
 .st-draw__video-lsit__item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     background-color: #fff;
     height: 32px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.st-draw__video-lsit__item
+.st-draw__video-lsit__item:hover {
+    background-color: #eee;
+}
 
-.st-draw__video-lsit__item img {
+.st-draw__video-lsit__item__left {
+    display: flex;
+    align-items: center;
+}
+
+.st-draw__video-lsit__item__left img {
     width: 20px;
     height: 20px;
     object-fit: contain;
     margin-right: 10px;
 }
 
-.st-draw__video-lsit__item a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+.st-draw__video-lsit__item:hover 
+.st-draw__video-lsit__item__operater {
+    display: flex;
 }
+
+.st-draw__video-lsit__item__operater {
+    display: none;
+}
+
+.st-draw__video-lsit__item__operater i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.st-draw__video-lsit__item__operater i:hover {
+    opacity: 0.5;
+}
+
+/* > i {
+    font-size: 16px;
+}
+
+.st-draw__video-lsit__item__operater__box {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+} */
 
 
 
